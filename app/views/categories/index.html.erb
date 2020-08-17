@@ -1,6 +1,1925 @@
 <%= render 'partials/header' %>
 
+<nav class="breadcrumb-list contents-pc contents" aria-label="パンくずリスト">
+    <ol class="breadcrumb mb-1 py-1 bg-white">
+        <li class="breadcrumb-item"><a href="http://localhost:3000">ホーム</a></li>
+        <li class="breadcrumb-item active" aria-current="page">カテゴリー一覧</li>
+    </ol>
+</nav>
+
+<section class="container">
+    <div>
+        <div class="text-center mt-5">
+            <h2>中古品をカテゴリーから探す</h2>
+            <p class="m-0">中古品の最安値を探すならCollecton!</p>
+            <p>ブランドからお好みの中古品を見つけよう!</p>
+        </div>
+        <!--レディース -->
+        <p class="list-title text-white col-10 mx-auto p-2">レディース</p>
+        <div class="categories-item">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">トップス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トップスすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">Tシャツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブラウス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ホルターネック</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ニット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チュニック</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カーディガン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アンサンブル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベスト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パーカー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スウェット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チューブトップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ジャージ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+            
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">アウター</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アウターすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">テーラードジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ノーカラージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">デニムジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レザージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダウンジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ライダースジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミリタリージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダウンベスト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブルゾン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ポンチョ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ロングコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トレンチコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダッフルコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ピーコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チェスターコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モッズコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スタジャン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">毛皮</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スプリングコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカジャン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">パンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パンツすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ジーンズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショートパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カジュアルパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハーフパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チノパン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カーゴパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">クロップドパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">オーバーオール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">オールインワン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サルエルパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ガウチョパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">スカート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカートすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミニスカート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ロングスカート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キュロット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">ワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ワンピースすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミニワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ひざ丈ワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ロングワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">靴</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">靴すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パンプス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サンダル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スニーカー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミュール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モカシン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ローファー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">フラットシューズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">長靴</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">パジャマ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パジャマすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">ルームウェア</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ルームウェアすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">レッグウェア</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レッグウェアすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ソックス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レギンス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ストッキング</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レッグウォーマー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">帽子</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">帽子すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ビーニー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベレー帽</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キャップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キャスケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">麦わら帽子</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">バッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バッグすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハンドバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トートバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">エコバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">リュック</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ボストンバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スポーツバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショルダーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">クラッチバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ポーチ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バッグすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ボディバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マザーズバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">メッセンジャーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ビジネスバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キャリーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショップ袋</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">和装用バッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">かごバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">アクセサリー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アクセサリーすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネックレス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブレスレット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バングル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">リング</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ピアス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">イヤリング</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アンクレット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">コサージュ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チャーム</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">ヘアアクセサリー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ヘアアクセサリーすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">シュシュ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カチューシャ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カチューシャ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">小物</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">小物すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">長財布</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">折り財布</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">コインケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">名刺入れ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キーケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キーホルダー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">手袋</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハンカチ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マフラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ストール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカーフ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネックウォーマー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サスペンダー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">メガネ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モバイルケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">手帳</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">イヤマフラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">傘</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レインコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">タバコグッズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">ウィッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ウィッグすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">前髪ウィッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ロングストレート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ロングカール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショートストレート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショートカール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">浴衣</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">浴衣すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">浴衣</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">着物</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">振袖</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">長襦袢</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">水着</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">水着すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">水着セパレート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">水着ワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">水着スポーツ用</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+       
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">フォーマル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">フォーマルすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカートスーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パンツスーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ドレス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パーティーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">シューズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ウェディング</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">マタニティ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マタニティすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トップス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アウター</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">インナー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ワンピース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パジャマ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">授乳服</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">時計</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">時計すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アナログ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">デジタル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ラバーベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レザーベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">金属ベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">その他</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">その他すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">コスプレ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">下着</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- メンズ -->
+    <div class="mt-5">
+        <p class="list-title text-white col-10 mx-auto p-2">メンズ</p>
+        <div class="categories-item">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">トップス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トップスすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カーディガン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ジャージ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パーカー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ポロシャツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">シャツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スウェット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ニット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">タンクトップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">Tシャツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベスト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">アウター</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アウターすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブルゾン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チェスターコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カバーオール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">デニムジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダウンベスト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダウンジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ダッフルコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">フライトジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レザージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミリタリージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モッズコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マウンテンパーカー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ノーカラージャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ナイロンジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ピーコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ポンチョ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ライダースジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スカジャン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ステンカラーコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スタジャン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">テーラードジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トレンチコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">パンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">パンツすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">チノパン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ジーンズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">オーバーオール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ペインターパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サルエルパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ショートパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スラックス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カーゴパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">靴</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">靴すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">デッキシューズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ビジネス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モカシン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">長靴</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サンダル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スニーカー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">バッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バッグすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ボディーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ボストンバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ビジネスバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ドラムバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">エコバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">メッセンジャーバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">リュック</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トートバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トラベルバッグ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ウエストポーチ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">スーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スーツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">セットアップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スラックス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スーツジャケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スーツベスト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">帽子</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">帽子すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベレー帽</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キャップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キャスケット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ニットキャップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サンバイザー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">アクセサリー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アクセサリーすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アンクレット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ブレスレット</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネックレス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ピアス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">リング</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バングル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">小物</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">小物すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">バンダナ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">名刺入れ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">タバコグッズ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">コインケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">カフリンクス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">イヤマフラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">メガネ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">手袋</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ハンカチ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キーケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">キーホルダー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">長財布</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ミラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">モバイルケース</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マネークリップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネクタイピン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネックウォーマー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">手帳</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レインコート</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">マフラー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ストール</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ストラップ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">サスペンダー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ネクタイ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">傘</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">折り財布</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ウォレットチェーン</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">時計</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">時計すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アナログ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">デジタル</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レザーベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">金属ベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ラバーベルト</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+        
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">水着</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">水着すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アクセサリー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">スポーツ用</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+           
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">レッグウェア</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レッグウェアすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レギンス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">レッグウォーマー</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ソックス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+   
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">アンダーウェア</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">アンダーウェアすべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">ボクサーパンツ</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+                <div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">トランクス</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+                
+        <div class="categories-item mt-2">
+            <div class="categories-title">
+            	<div class="categories-title-text list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 p-0">その他</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-down"></i></p>
+            	</div>
+            </div>
+            <div class="categories-detail">
+            	<div class="list-text col-10 mx-auto py-2 row">
+            	    <p class="col m-0 pl-4">その他すべて</p>
+            	    <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            	    <a class="text-black" href="http://localhost:3000/categories/"></a>
+            	</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- カテゴリーのリンクコード -->
+<!--
 <a href="http://localhost:3000/categories/1">レディース</a>
 <a href="http://localhost:3000/categories/176">メンズ</a>
 
@@ -28,6 +1947,7 @@
 <a href="http://localhost:3000/categories/158">マタニティ</a>
 <a href="http://localhost:3000/categories/167">その他</a>
 <a href="http://localhost:3000/categories/170">時計</a>
+
 <a href="http://localhost:3000/categories/177">トップス</a>
 <a href="http://localhost:3000/categories/188">アウター</a>
 <a href="http://localhost:3000/categories/211">パンツ</a>
@@ -314,3 +2234,4 @@
 <a href="http://localhost:3000/categories/302">ボクサーパンツ</a>
 <a href="http://localhost:3000/categories/303">トランクス</a>
 
+-->

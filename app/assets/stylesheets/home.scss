@@ -62,24 +62,69 @@ a{
     color: #333 !important;
 }
 
-// ヘッダー指定
-.header{
-    background-image: url("41831504.jpg") !important;
-    background-size: cover;
-    width: 100vw;
-    height: 360px;
-    margin-bottom: 40px;
-    .head-description{
-        margin-left: 100px;
-    
-        p{
-            font-size: $font-size_3l;
+
+// 共通css
+// kaminariデザイン
+.pagination-nav{
+    margin: 20px auto;
+    .pagination{
+        margin: 0 auto;
+        .page-item{
+            margin: 0 5px;
+        }
+        .page-item.active .page-link {
+            z-index: 3;
+            color: #fff !important;
+            background-color: #ffd900 !important;
+            border-color: #ffd900 !important;
+        }
+          /* 表示しているページ番号のデザイン */
+        .active>a {     
+            background: #fff7c7 !important;     /*背景の色を変える*/
+            border-radius: 50%;     /*角を丸くする*/
+        }
+        .page-link{
+            text-align: center;
+            box-sizing: border-box;
+            width: 40px;
+            height: 40px;
+            padding: 7px 6px !important;
+            border-radius: 50% !important;     /*角を丸くする*/
+        }
+        a{
+            border: none;     /*枠線をなくす*/
+            color: #696969;   /*文字の色を変える*/
+            font-size: 20px;
+            &:hover{
+                border-radius: 50%;    /*角を丸くする*/
+                background: #fff7c7 !important;
+                color: #696969;
+            }
         }
     }
-    input{
-        // color: #828c96;
-        text-align: center;
-        // background-color: #fff;
+}
+ 
+
+// ヘッダー指定
+header{
+    .header{
+        background-image: url("aaa.png");
+        background-size: cover;
+        width: 100vw;
+        height: 360px;
+        margin-bottom: 40px;
+        .head-description{
+            margin-left: 100px;
+        
+            p{
+                font-size: $font-size_3l;
+            }
+        }
+        input{
+            // color: #828c96;
+            text-align: center;
+            // background-color: #fff;
+        }
     }
 }
 
@@ -156,7 +201,7 @@ a{
 
 // ヘッダー指定
 .header-mobile{
-    background-image: url("41831504.jpg");
+    background-image: url("");
     width: 100vw;
     height: 460px;
     margin-bottom: 40px;
@@ -179,6 +224,7 @@ a{
         background: #000;
         .item-img {
             display: block;
+            opacity: .5;
         }
         .item-name{
             font-size: $font-size_l;
@@ -192,7 +238,7 @@ a{
         }
     }
 }
-.header-image{
-    width:1920px;
-    height:1276px;
-}
+// .header-image{
+//     width:1920px;
+//     height:1276px;
+// }

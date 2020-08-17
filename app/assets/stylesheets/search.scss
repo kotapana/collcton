@@ -2,7 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@import "home.scss";
+// @import "home.scss";
+// 変数格納
+$font-size_ss: 8px;
+$font-size_s: 10px;
+$font-size_sm: 12px;
+$font-size_m: 14px;
+$font-size_ml: 16px;
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_xxl: 32px;
+$font-size_3l: 38px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+$breakpoints: (
+  'xs': 'screen and (max-width: 575px)',  
+  'sm': 'screen and (min-width: 576px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 992px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
 
 // ヘッダートップ
 .head-top{
@@ -35,8 +65,9 @@
 
 // タイトルh1
 .title-img{
-    background-image: url("41831504.jpg");
+    background-image: url("aaa.png");
     background-size: cover;
+    width: 100vw;
     height: 176px;
 }
 
@@ -82,7 +113,7 @@
     }
 }
 
-// アイテム部分
+// アイテム部分(共通CSS)
 .search-contents{
     .search-items{
         .nav-select.nav-item::before {
@@ -106,7 +137,7 @@
         .search-card{
             padding: 5px;
             .card-img{
-                height: 250px;
+                height: 200px;
                 .card-img-top{
                     // object-fit: fill;
                     object-fit: cover;
@@ -149,55 +180,16 @@
     } 
 }
 
-// kaminariデザイン
-.pagination-nav{
-    margin: 20px auto;
-    .pagination{
-        margin: 0 auto;
-        .page-item{
-            margin: 0 5px;
-        }
-        .page-item.active .page-link {
-            z-index: 3;
-            color: #fff !important;
-            background-color: #ffd900 !important;
-            border-color: #ffd900 !important;
-        }
-          /* 表示しているページ番号のデザイン */
-        .active>a {     
-            background: #fff7c7 !important;     /*背景の色を変える*/
-            border-radius: 50%;     /*角を丸くする*/
-        }
-        .page-link{
-            text-align: center;
-            box-sizing: border-box;
-            width: 40px;
-            height: 40px;
-            padding: 7px 6px !important;
-            border-radius: 50% !important;     /*角を丸くする*/
-        }
-        a{
-            border: none;     /*枠線をなくす*/
-            color: #696969;   /*文字の色を変える*/
-            font-size: 20px;
-            &:hover{
-                border-radius: 50%;    /*角を丸くする*/
-                background: #fff7c7 !important;
-                color: #696969;
-            }
-        }
-    }
-}
-  
-
 
 // まとめ部分
 .contents-summary .summary-inner-box{
     position: relative;
     padding: 5px;
     .summary-inner {
+        // background: #000;
         .summary-img {
             display: block;
+            // opacity: .4;
         }
         .summary-text{
             white-space: nowrap;

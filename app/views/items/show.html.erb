@@ -13,10 +13,10 @@
             <% @category_small.each do |small| %>
                 <li class="breadcrumb-item active" aria-current="page"><a href="http://localhost:3000/categories/<%= small.id %>"><%= small.small_category %></a></li>
             <% end %>
-            <li class="breadcrumb-item active" aria-current="page"><%= @mercari_item.item_title %></li>
         </ol>
     </nav>
 </main>
+
     <section>
         <div class="wrapper-itemdetail">
             <div class="inner-contents">
@@ -60,7 +60,7 @@
                                         </div>
                                         <p class="itemdetail-button-good-text"><%= @mercari_item.item_good %></p>
                                     </div>
-                                    <a href="<%= @mercari_item.item_url %>" class="itemdetail-button">詳細を見る</a>
+                                    <button class="itemdetail-button">詳細を見る</button>
                                 </div>
                             </div>
                         </div>
@@ -72,10 +72,90 @@
     <section>
         <div class="wrapper-recommenditem">
             <div class="inner-contents">
-                <%= render 'items/carousel_category' %>
-                <% if @mercari_item.item_brand != "" %>
-                    <%= render 'items/carousel_brand' %>
-                <% end %>
+                <h2>類似した<%= @mercari_item.item_category_small %>の中古品</h2>
+                <div class="recommenditem-box-adsjustment">
+                    <div class="recommenditem-prevnext">
+                        <p class="recommenditem-prevnext-text"><</p>
+                    </div>
+                    <% @mercari_items_carousel_category_small.each do |mercari_items_carousel_category_small| %>
+                        <div class="recommenditem-box">
+                            <a href="http://localhost:3000/items/<%= mercari_items_carousel_category_small.mercari_item_id %>">
+                                <img src="<%= mercari_items_carousel_category_small.item_image_url %>" class="recommenditem-img">
+                                <p class="recommenditem-title"><%= mercari_items_carousel_category_small.item_brand %></p>
+                                <p class="recommenditem-description"><%= mercari_items_carousel_category_small.item_title %></p>
+                                <div class="recommenditem-price-button-adjustment">
+                                    <p class="recommenditem-price">¥ <%= mercari_items_carousel_category_small.item_fee %></p>
+                                </div>
+                            </a>
+                        </div>
+                    <% end %>
+                </div>
+                <div class="more-button-recommenditem">
+                    <p class="more-button-recommenditem-text">もっと見る</p>
+                </div>
+                <h2>類似した<%= @mercari_item.item_category_medium %>の中古品</h2>
+                <div class="recommenditem-box-adsjustment">
+                    <div class="recommenditem-prevnext">
+                        <p class="recommenditem-prevnext-text"><</p>
+                    </div>
+                    <% @mercari_items_carousel_category_medium.each do |mercari_items_carousel_category_medium| %>
+                        <div class="recommenditem-box">
+                            <a href="http://localhost:3000/items/<%= mercari_items_carousel_category_medium.mercari_item_id %>">
+                                <img src="<%= mercari_items_carousel_category_medium.item_image_url %>" class="recommenditem-img">
+                                <p class="recommenditem-title"><%= mercari_items_carousel_category_medium.item_brand %></p>
+                                <p class="recommenditem-description"><%= mercari_items_carousel_category_medium.item_title %></p>
+                                <div class="recommenditem-price-button-adjustment">
+                                    <p class="recommenditem-price">¥ <%= mercari_items_carousel_category_medium.item_fee %></p>
+                                </div>
+                            </a>
+                        </div>
+                    <% end %>
+                </div>
+                <div class="more-button-recommenditem">
+                    <p class="more-button-recommenditem-text">もっと見る</p>
+                </div>
+                <h2>類似した<%= @mercari_item.item_category_large %>の中古品</h2>
+                <div class="recommenditem-box-adsjustment">
+                    <div class="recommenditem-prevnext">
+                        <p class="recommenditem-prevnext-text"><</p>
+                    </div>
+                    <% @mercari_items_carousel_category_large.each do |mercari_items_carousel_category_large| %>
+                        <div class="recommenditem-box">
+                            <a href="http://localhost:3000/items/<%= mercari_items_carousel_category_large.mercari_item_id %>">
+                                <img src="<%= mercari_items_carousel_category_large.item_image_url %>" class="recommenditem-img">
+                                <p class="recommenditem-title"><%= mercari_items_carousel_category_large.item_brand %></p>
+                                <p class="recommenditem-description"><%= mercari_items_carousel_category_large.item_title %></p>
+                                <div class="recommenditem-price-button-adjustment">
+                                    <p class="recommenditem-price">¥ <%= mercari_items_carousel_category_large.item_fee %></p>
+                                </div>
+                            </a>
+                        </div>
+                    <% end %>
+                </div>
+                <div class="more-button-recommenditem">
+                    <p class="more-button-recommenditem-text">もっと見る</p>
+                </div>
+                <h2>類似した<%= @mercari_item.item_brand %>の中古品</h2>
+                <div class="recommenditem-box-adsjustment">
+                    <div class="recommenditem-prevnext">
+                        <p class="recommenditem-prevnext-text"><</p>
+                    </div>
+                    <% @mercari_items_carousel_brand.each do |mercari_items_carousel_brand| %>
+                        <div class="recommenditem-box">
+                            <a href="http://localhost:3000/items/<%= mercari_items_carousel_brand.mercari_item_id %>">
+                                <img src="<%= mercari_items_carousel_brand.item_image_url %>" class="recommenditem-img">
+                                <p class="recommenditem-title"><%= mercari_items_carousel_brand.item_brand %></p>
+                                <p class="recommenditem-description"><%= mercari_items_carousel_brand.item_title %></p>
+                                <div class="recommenditem-price-button-adjustment">
+                                    <p class="recommenditem-price">¥ <%= mercari_items_carousel_brand.item_fee %></p>
+                                </div>
+                            </a>
+                        </div>
+                    <% end %>
+                </div>
+                <div class="more-button-recommenditem">
+                    <p class="more-button-recommenditem-text">もっと見る</p>
+                </div>
             </div>
         </div>
     </section>

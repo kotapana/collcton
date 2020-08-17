@@ -1,9 +1,38 @@
 <%= render 'partials/header' %>
 
 <!-- カテゴリーのリンクコード -->
+<!-- <i class="fas fa-angle-right"></i> -->
+<a href="#bottom">したいく</a>
 
-<% @brands.each do |brand| %>
-    <a href="http://localhost:3000/brands/<%= brand.id %>"><%= brand.name %></a>
-<% end %>
 
-<%= paginate @brands %>
+
+<nav class="breadcrumb-list contents-pc contents" aria-label="パンくずリスト">
+    <ol class="breadcrumb mb-1 py-1 bg-white">
+        <li class="breadcrumb-item"><a href="http://localhost:3000">ホーム</a></li>
+        <li class="breadcrumb-item active" aria-current="page">ブランド一覧</li>
+    </ol>
+</nav>
+<div class="container">
+    <div class="text-center mt-5">
+        <h2 class="m-0">中古品をブランドから探す</h2>
+        <p>中古品の最安値を探すならCollecton!</p>
+        <p>ブランドからお好みの中古品を見つけよう!</p>
+    </div>
+    <p class="list-title text-white col-10 mx-auto py-2">ブランド一覧</p>
+    <% @brands.each do |brand| %>
+        <div class="list-text col-10 mx-auto mb-2 py-2 row">
+            <p class="col m-0 p-0"><%= brand.name %></p>
+            <p class="col text-right m-0 text-secondary"><i class="fas fa-angle-right"></i></p>
+            <a class="text-black" href="http://localhost:3000/brands/<%= brand.id %>"></a>
+        </div>
+    <% end %>
+</div>
+
+<div class="pagination-nav row my-4">
+    <div class="col-auto mx-auto">
+        <%= paginate @brands %>
+    </div>
+</div>
+
+<div id="bottom">下きたよ</div>
+<a href="#">上行くよ</a>

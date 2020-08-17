@@ -1,32 +1,33 @@
 <header>
     <div class="header-mobile">
         <div class="header-top pt-5">
-            <h1 class="text-center text-white"><a href="http://localhost:3000" class="text-reset text-decoration-none">Collecton</a></h1>
-            <p class="text-center text-white">お気に入りの中古品をカンタン検索<img src="assets/Group 53.png" class="head-top-img" alt=""></p>
+            <h1 class="text-center text-white"><a href="http://localhost:3000" class="text-reset text-decoration-none">Collection</a></h1>
+            <p class="text-center text-white">お気に入りの中古品をカンタン検索<img src="assets/surprised.png" class="head-top-img" alt=""></p>
         </div>
-
-        <!-- 検索するコード -->
-        <%= form_with model: @post, url: search_path ,method: :get, data: {remote: false} do |f| %>
-            <div class="header-contents contents shadow-sm form-group bg-white border mx-auto mt-5">
-                <div class="row m-2">
-                    <div class="input-group col-12 p-0 my-1">
-                        <!-- キーワード検索するコード -->
-                        <%= f.text_field :keyword , value: params[:keyword] , class: "form-control rounded-0" , placeholder: "キーワードで絞る" %>
-                    </div>
-                    <div class="input-group col-6 pr-1 p-0 my-1">
-                        <!-- ブランド検索するコード -->
-                        <%= f.text_field :brand , value: params[:brand] , class: "form-control rounded-0" , placeholder: "ブランドで絞る" %>
-                    </div>
-                    <div class="input-group col-6 pl-1 p-0 my-1">
-                        <!-- 価格検索するコード -->
-                        <%= f.text_field :price_min , value: params[:price_min] , class: "form-control rounded-0" , placeholder: "最低価格で絞る"%>
-                    </div>
-                    <div class="input-group col-12 p-0 my-1">
-                        <button class="btn btn-color form-control text-white rounded-0">検索</button>
-                    </div>
+        <div class="header-contents contents shadow-sm form-group bg-white border mx-auto mt-5">
+            <div class="row m-2">
+                <div class="input-group col-12 p-0 my-1">
+                    <select name="" id="" class="form-control form-color rounded-0 pl-4">
+                        <option hidden>ジャンルを選択</option>
+                        <option value="1">トップス</option>
+                        <option value="2">ボトムス</option>
+                    </select>
+                </div>
+                <div class="input-group col-6 pr-1 p-0 my-1">
+                    <select name="" id="" class="form-control form-color rounded-0 pl-4">
+                        <option hidden>ブランドを選択</option>
+                        <option value="1">アディダス</option>
+                        <option value="2">ナイキ</option>
+                    </select>
+                </div>
+                <div class="input-group col-6 pl-1 p-0 my-1">
+                    <input type="text" class="form-control rounded-0" placeholder="価格を選択">
+                </div>
+                <div class="input-group col-12 p-0 my-1">
+                    <button class="btn btn-color form-control text-white rounded-0">検索</button>
                 </div>
             </div>
-        <% end %>
+        </div>
     </div>
 </header>
 
@@ -37,56 +38,80 @@
         </div>
         <div class="items-imgs row mb-2 item-imgs">
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/2">
+                <a href="http://localhost:3000/search">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 4.png">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
                         <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/15">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 8.png">
-                        <div class="item-name text-white font-weight-bold">アウター</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/48">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 7.png">
-                        <div class="item-name text-white font-weight-bold">スカート</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/81">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 6.png">
-                        <div class="item-name text-white font-weight-bold">バッグ</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/57">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 54.png">
-                        <div class="item-name text-white font-weight-bold">靴</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/142">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 56.png">
-                        <div class="item-name text-white font-weight-bold">浴衣</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="w-75 mx-auto mt-4">
-            <a href="http://localhost:3000/categories/1" class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</a>
+            <button class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</button>
         </div>
     </div>
 
@@ -96,56 +121,80 @@
         </div>
         <div class="items-imgs row mb-2 item-imgs">
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/177">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 9.png">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
                         <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/188">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 10.png">
-                        <div class="item-name text-white font-weight-bold">アウター</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/211">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 13.png">
-                        <div class="item-name text-white font-weight-bold">パンツ</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/228">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 11.png">
-                        <div class="item-name text-white font-weight-bold">バッグ</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/272">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 12.png">
-                        <div class="item-name text-white font-weight-bold">財布</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/categories/288">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="/assets/Group 55.png">
-                        <div class="item-name text-white font-weight-bold">時計</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="w-75 mx-auto mt-4">
-            <a href="http://localhost:3000/categories/176" class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</a>
+            <button class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</button>
         </div>
     </div>
 
@@ -155,56 +204,130 @@
         </div>
         <div class="items-imgs row mb-2 item-imgs">
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/14">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 14.png">
-                        <div class="item-name text-white font-weight-bold">ルイヴィトン</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/52">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 15.png">
-                        <div class="item-name text-white font-weight-bold">グッチ</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/40">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 16.png">
-                        <div class="item-name text-white font-weight-bold">シャネル</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/37">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 17.png">
-                        <div class="item-name text-white font-weight-bold">エルメス</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/21">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 18.png">
-                        <div class="item-name text-white font-weight-bold">ティファニー</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
             <div class="col-sm-4 col-6 p-0">
-                <a href="http://localhost:3000/brands/9085">
+                <a href="#">
                     <div class="items-col-mobile">
-                        <img  class="img-fluid item-img" src="assets/Group 20.png">
-                        <div class="item-name text-white font-weight-bold">supreme</div>
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-6 p-0 d-none d-sm-block">
+                <a href="#">
+                    <div class="items-col-mobile">
+                        <img  class="img-fluid item-img" src="/assets/luggage-2136151_1920.jpg">
+                        <div class="item-name text-white font-weight-bold">トップス</div>
                     </div>
                 </a>
             </div>
         </div>
         <div class="w-75 mx-auto mt-4">
-            <a href="http://localhost:3000/brands" class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</a>
+            <button class="btn btn-color form-control rounded-pill h3 text-white">もっと見る</button>
         </div>
     </div>
 </main>
+
+
+<footer>
+<div class="footer-contents mt-5">
+    <div class="inner contents">
+        <div class="inner-footer-box row pt-4">
+            <div class="footer-box col-6">
+                <p class="footer-title font-weight-bold">Collectonについて</p>
+                <p><a href="#" class="text-reset text-decoration-none">運営情報</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">ロゴの使用について</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">各種規約</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">プライバシーポリシー</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">特定商取引法に基づく表示</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">お問い合わせ</a></p>
+            </div>
+            <div class="footer-box col-6">
+                <p class="footer-title font-weight-bold">コンテンツ一覧</p>
+                <p><a href="#" class="text-reset text-decoration-none">カテゴリ一覧</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">ブランド一覧</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">サイトマップ</a></p>
+            </div>
+            <div class="footer-box col-6 mt-3">
+                <p class="footer-title font-weight-bold">人気カテゴリ</p>
+                <p><a href="#" class="text-reset text-decoration-none">Louis Vuitton（ルイ・ヴィトン）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">CHANEL（シャネル）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">Hermès（エルメス）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">GUCCI（グッチ）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">BURBERRY（バーバリー）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">Saint Laurent（サンローラン）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">DIOR （ディオール）</a></p>
+            </div>
+            <div class="footer-box col-6 mt-3">
+                <p class="footer-title font-weight-bold">人気カテゴリ</p>
+                <p><a href="#" class="text-reset text-decoration-none">Louis Vuitton（ルイ・ヴィトン）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">CHANEL（シャネル）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">Hermès（エルメス）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">GUCCI（グッチ）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">BURBERRY（バーバリー）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">Saint Laurent（サンローラン）</a></p>
+                <p><a href="#" class="text-reset text-decoration-none">DIOR （ディオール）</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="contents">
+        <p class="footer-lasttext text-center text-white font-weight-bold py-1 m-0">2020 Copyright Collecton.All Right Reserved.</p>
+        </div>
+    </div> 
+</div>
+</footer>
