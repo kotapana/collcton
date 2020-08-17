@@ -1,0 +1,82 @@
+<%= render 'partials/header' %>
+
+<main>
+    <nav class="breadcrumb-list contents-pc contents" aria-label="パンくずリスト">
+        <ol class="breadcrumb mb-1 py-1 bg-white">
+            <li class="breadcrumb-item"><a href="http://localhost:3000">ホーム</a></li>
+            <% @category_large.each do |large| %>
+                <li class="breadcrumb-item active" aria-current="page"><a href="http://localhost:3000/categories/<%= large.id %>"><%= large.large_category %></a></li>
+            <% end %>
+            <% @category_medium.each do |medium| %>
+                <li class="breadcrumb-item active" aria-current="page"><a href="http://localhost:3000/categories/<%= medium.id %>"><%= medium.medium_category %></a></li>
+            <% end %>
+            <% @category_small.each do |small| %>
+                <li class="breadcrumb-item active" aria-current="page"><a href="http://localhost:3000/categories/<%= small.id %>"><%= small.small_category %></a></li>
+            <% end %>
+            <li class="breadcrumb-item active" aria-current="page"><%= @mercari_item.item_title %></li>
+        </ol>
+    </nav>
+</main>
+    <section>
+        <div class="wrapper-itemdetail">
+            <div class="inner-contents">
+                <div class="itemdetail-img-adjustment">
+                    <div class="itemdetail-img-adjustment-column">
+                    <% @mercari_item_images_other.each do |mercari_item_image_other| %>
+                        <img src="<%= mercari_item_image_other.item_image_url %>" class="itemdetail-img-side">
+                    <% end %>
+                    </div>
+                    <img src="<%= @mercari_item_images_first.item_image_url %>" class="itemdetail-img">
+                    <div class="itemdetail-introduction-box"> 
+                        <div class="itemdetail-introduction-inner">
+                            <p class="itemdetail-introduction-box-shop"><%= @mercari_item.item_brand %></p>
+                            <h1 class="itemdetail-introduction-box-title"><%= @mercari_item.item_title %></h1>
+                            <hr class="itemdetail-introduction-box-line">
+                            <div class="itemdetail-introduction-box-text-inner">
+                                <div class="itemdetail-introduction-box-text-column-left">
+                                    <p>商品のサイズ</p>
+                                    <p>商品の状態</p>
+                                    <p>ブランド</p>
+                                    <p>出品先</p>
+                                </div>
+                                <div class="itemdetail-introduction-box-text-column-right">
+                                    <p><%= @mercari_item.item_size %></p>
+                                    <p><%= @mercari_item.item_status %></p>
+                                    <p><%= @mercari_item.item_brand %></p>
+                                    <img src="/assets/logo-mercari.png" class="itemdetail-introduction-box-logo">
+                                </div>
+                            </div>
+                            <hr class="itemdetail-introduction-box-line">
+                            <div class="itemdetail-price-button-adjustment">
+                                <div class="itemdetail-price-inner-left">
+                                    <div class="itemdetail-carriage">
+                                        <p class="itemdetail-carriage-text">送料込み</p>
+                                    </div>
+                                    <p class="itemdetail-price"><%= @mercari_item.item_fee %></p>
+                                </div>
+                                <div class="itemdetail-button-inner-right">
+                                    <div class="itemdetail-button-good">
+                                        <div class="itemdetail-button-good-heart">
+                                        </div>
+                                        <p class="itemdetail-button-good-text"><%= @mercari_item.item_good %></p>
+                                    </div>
+                                    <a href="<%= @mercari_item.item_url %>" class="itemdetail-button">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper-recommenditem">
+            <div class="inner-contents">
+                <%= render 'items/carousel_category' %>
+                <% if @mercari_item.item_brand != "" %>
+                    <%= render 'items/carousel_brand' %>
+                <% end %>
+            </div>
+        </div>
+    </section>
+</main>

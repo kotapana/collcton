@@ -1,0 +1,9 @@
+<%= render 'partials/header' %>
+
+<!-- カテゴリーのリンクコード -->
+
+<% @brands.each do |brand| %>
+    <a href="http://localhost:3000/brands/<%= brand.id %>"><%= brand.name %></a>
+<% end %>
+
+<%= paginate @brands %>

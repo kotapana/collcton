@@ -1,0 +1,21 @@
+<%= render 'partials/header' %>
+
+<main>
+    <nav class="breadcrumb-list contents-pc contents" aria-label="パンくずリスト">
+        <ol class="breadcrumb mb-1 py-1 bg-white">
+            <li class="breadcrumb-item"><a href="http://localhost:3000">ホーム</a></li>
+            <% @brands.each do |brand| %>
+                <li class="breadcrumb-item active" aria-current="page"><a href="http://localhost:3000/brands/<%= brand.id %>"><%= brand.name %></a></li>
+            <% end %>
+        </ol>
+    </nav>
+
+    <div class="title-img">
+        <div class="title-contents contents-pc contents">
+            <h1 class="title-h1 h2 text-white py-5"><%= @h1 %></h1>
+        </div>
+    </div>
+
+    <%= render 'search/faceted_navigation' %>
+    <%= render 'search/global_navigation' %>
+</main>

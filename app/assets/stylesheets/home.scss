@@ -1,0 +1,198 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// 変数格納
+$font-size_ss: 8px;
+$font-size_s: 10px;
+$font-size_sm: 12px;
+$font-size_m: 14px;
+$font-size_ml: 16px;
+$font-size_l: 20px;
+$font-size_xl: 24px;
+$font-size_xxl: 32px;
+$font-size_3l: 38px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+$breakpoints: (
+  'xs': 'screen and (max-width: 575px)',  
+  'sm': 'screen and (min-width: 576px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 992px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+
+// new class　指定
+a{
+    text-decoration: none;
+}
+
+.contents{
+    width: 92vw;
+    margin: 0 auto;
+}
+.contents-mobile{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.row{
+    margin: 0 !important;
+}
+
+.btn-color{
+    background-color: rgb(255, 217, 0) !important;
+}
+
+.form-color{
+    color: #828c96 !important;
+}
+.text-black{
+    color: #333 !important;
+}
+
+// ヘッダー指定
+.header{
+    background-image: url("41831504.jpg") !important;
+    background-size: cover;
+    width: 100vw;
+    height: 360px;
+    margin-bottom: 40px;
+    .head-description{
+        margin-left: 100px;
+    
+        p{
+            font-size: $font-size_3l;
+        }
+    }
+    input{
+        // color: #828c96;
+        text-align: center;
+        // background-color: #fff;
+    }
+}
+
+
+// items
+.items-contents{ 
+    .items-h2{
+        font-size: $font-size_l;
+    }
+    .items-col{
+        position: relative;
+        padding-right: 8px;
+        &:nth-child(5n){padding:0;}
+        .item-name{
+            font-size: $font-size_l;
+            top: 50%;
+        }
+    }
+    // ブランド指定
+    .brand-col{
+        position: relative;
+        padding-right: 8px;
+        &:nth-child(8n){padding:0;}
+        .brand-name{
+            font-size: $font-size_sm;
+            font-weight: 700;
+            top: 70%;
+        }
+    }
+}
+// items & brand 名前指定
+.item-name ,.brand-name{
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    text-align: center;
+}
+
+// ----------- pc対応 ---------
+.contents-pc{
+    min-width: 1000px !important;
+}
+
+// ----------- mbile対応 ---------
+
+// 576px未満レスポンシブ
+@include mq(xs) {
+// ヘッダー指定
+    .header-mobile{
+        .header-contents{
+            select,input::placeholder{
+                // font-size: $font-size_s !important;
+                text-align-last:center;
+            }
+        }
+    }
+    footer{
+        p{
+            font-size: $font-size_m;
+        }
+        .footer-lasttext{
+            font-size: $font-size_sm !important;
+        }
+    }
+}
+// 576px以上レスポンシブ
+@include mq(sm) {
+    .header-contents{
+        width: 50vw !important;
+    }
+}
+
+// ヘッダー指定
+.header-mobile{
+    background-image: url("41831504.jpg");
+    width: 100vw;
+    height: 460px;
+    margin-bottom: 40px;
+    .header-contents{
+        select,input::placeholder,input{
+            font-size: $font-size_sm;
+            height: 38px;
+            color: #828c96;
+            text-align: center;
+            background-color: #fff;
+        }
+    }
+}
+
+
+// items & ブランド指定
+.items-contents{ 
+    .items-col-mobile{
+        position: relative;
+        background: #000;
+        .item-img {
+            display: block;
+        }
+        .item-name{
+            font-size: $font-size_l;
+            white-space: nowrap;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform : translate(-50%,-50%);
+            transform : translate(-50%,-50%);
+            text-align: center;
+        }
+    }
+}
+.header-image{
+    width:1920px;
+    height:1276px;
+}

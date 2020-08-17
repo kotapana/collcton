@@ -1,0 +1,190 @@
+<header>
+    <div class="header">
+        <div class="head-contents contents-pc">
+            <div class="head-inner">
+                <h1 class="head-title p-4"><a href="http://localhost:3000/" class="text-white text-decoration-none">Collecton</a></h1>
+                <div class="head-description">
+                    <p class="text-white font-weight-bold mb-0">最安値がわかる！</p>
+                    <p class="text-white font-weight-bold mb-0">お気に入りの中古品</p>
+                    <p class="text-white font-weight-bold mb-0">をカンタン検索</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 検索するコード -->
+        <%= form_with model: @post, url: search_path ,method: :get, data: {remote: false} do |f| %>
+        <div class="contents  contents-pc form-group row bg-white border rounded mx-auto mt-5">
+            <div class="col-2 d-flex align-items-center">
+                <div class="align-middle mx-auto font-weight-bold">
+                    条件を指定する
+                </div>
+            </div>
+            <div class="col-10 input-group my-4 pl-0">
+                <!-- キーワード検索するコード -->
+                <%= f.text_field :keyword , value: params[:keyword] , class: "form-control rounded-0" , placeholder: "キーワードで絞る" %>
+                <!-- ブランド検索するコード -->
+                <%= f.text_field :brand , value: params[:brand] , class: "form-control rounded-0" , placeholder: "ブランドで絞る" %>
+                <!-- 価格検索するコード -->
+                <%= f.text_field :price_min , value: params[:price_min] , class: "form-control rounded-0" , placeholder: "最低価格で絞る"%>
+                <button class="btn btn-color text-white rounded-0">検索</button>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</header>
+
+<main>
+    <div class="items-contents contents-pc contents">
+        <div class="row">
+            <h2 class="items-h2 font-weight-bold mt-5">女性向け中古品を探す</h2>
+        </div>
+        <div class="items-imgs row mb-2 item-imgs">
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/2">
+                    <img  class="img-fluid" src="/assets/Group 4.png">
+                    <div class="item-name text-white font-weight-bold">トップス</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/15">
+                    <img  class="img-fluid" src="/assets/Group 8.png">
+                    <div class="item-name text-white font-weight-bold">ジャケット・アウター</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/48">
+                    <img  class="img-fluid" src="/assets/Group 7.png">
+                    <div class="item-name text-white font-weight-bold">スカート</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/81">
+                    <img  class="img-fluid" src="/assets/Group 6.png">
+                    <div class="item-name text-white font-weight-bold">バッグ</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/125">
+                    <img  class="img-fluid" src="/assets/Group 5.png">
+                    <div class="item-name text-white font-weight-bold">財布</div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <% @categories_women_medium.each do |women_medium| %>
+                <div class="col-auto border p-0 m-1">
+                    <a href="http://localhost:3000/categories/<%= women_medium.id %>" class="text-reset text-decoration-none"><p class="text-center m-0 px-3 py-1"><%= women_medium.medium_category %></p></a>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="items-contents contents-pc contents">
+        <div class="row">
+            <h2 class="items-h2 font-weight-bold mt-5">男性向け中古品を探す</h2>
+        </div>
+        <div class="items-imgs row mb-2 item-imgs">
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/177">
+                    <img  class="img-fluid" src="/assets/Group 9.png">
+                    <div class="item-name text-white font-weight-bold">トップス</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/188">
+                    <img  class="img-fluid" src="/assets/Group 10.png">
+                    <div class="item-name text-white font-weight-bold">ジャケット・アウター</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/211">
+                    <img  class="img-fluid" src="/assets/Group 13.png">
+                    <div class="item-name text-white font-weight-bold">パンツ</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/228">
+                    <img  class="img-fluid" src="/assets/Group 11.png">
+                    <div class="item-name text-white font-weight-bold">バッグ</div>
+                </a>
+            </div>
+            <div class="items-col col pl-0">
+                <a href="http://localhost:3000/categories/272">
+                    <img  class="img-fluid" src="/assets/Group 12.png">
+                    <div class="item-name text-white font-weight-bold">財布</div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <% @categories_men_medium.each do |men_medium| %>
+                <div class="col-auto border p-0 m-1">
+                    <a href="http://localhost:3000/categories/<%= men_medium.id %>" class="text-reset text-decoration-none"><p class="text-center m-0 px-3 py-1"><%= men_medium.medium_category %></p></a>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="items-contents contents-pc contents">
+        <div class="row">
+            <h2 class="items-h2 font-weight-bold mt-5">ブランドの中古品から探す</h2>
+        </div>
+        <div class="items-imgs row mb-2 item-imgs">
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/14">
+                    <img class="img-fluid" src="assets/Group 14.png">
+                    <div class="brand-name text-white">ルイヴィトン<br><%= @louisvuiton %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/52">
+                    <img class="img-fluid" src="assets/Group 15.png">
+                    <div class="brand-name text-white">グッチ<br><%= @gucchi %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/40">
+                    <img class="img-fluid" src="assets/Group 16.png">
+                    <div class="brand-name text-white">シャネル<br><%= @chanel %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/37">
+                    <img class="img-fluid" src="assets/Group 17.png">
+                    <div class="brand-name text-white">エルメス<br><%= @hermes %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/21">
+                    <img class="img-fluid" src="assets/Group 18.png">
+                    <div class="brand-name text-white">ティファニー<br><%= @tiffany %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/9073">
+                    <img class="img-fluid" src="assets/Group 19.png">
+                    <div class="brand-name text-white">ドルチェ&ガッバーナ<br><%= @dolcegabbana %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/9085">
+                    <img class="img-fluid" src="assets/Group 20.png">
+                    <div class="brand-name text-white">supreme<br><%= @supreme %>件</div>
+                </a>
+            </div>
+            <div class="brand-col col pl-0">
+                <a href="http://localhost:3000/brands/46">
+                    <img class="img-fluid" src="assets/Group 21.png">
+                    <div class="brand-name text-white">ロレックス<br><%= @rolex %>件</div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <% @brands.each do |brand| %>
+                <div class="col-auto border p-0 m-1">
+                    <a href="http://localhost:3000/brands/<%= brand.id %>" class="text-reset text-decoration-none"><p class="text-center m-0 px-3 py-1"><%= brand.name %></p></a>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</main>

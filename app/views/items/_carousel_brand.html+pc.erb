@@ -1,0 +1,23 @@
+<h2>類似した<%= @mercari_item.item_brand %>の中古品</h2>
+<div class="recommenditem-box-adsjustment">
+    <div class="recommenditem-prevnext">
+        <p class="recommenditem-prevnext-text"><</p>
+    </div>
+    <% @mercari_items_carousel_brand.each do |mercari_items_carousel_brand| %>
+        <div class="recommenditem-box">
+            <a href="http://localhost:3000/items/<%= mercari_items_carousel_brand.mercari_item_id %>">
+                <img src="<%= mercari_items_carousel_brand.item_image_url %>" class="recommenditem-img">
+                <p class="recommenditem-title"><%= mercari_items_carousel_brand.item_brand %></p>
+                <p class="recommenditem-description"><%= mercari_items_carousel_brand.item_title %></p>
+                <div class="recommenditem-price-button-adjustment">
+                    <p class="recommenditem-price">¥ <%= mercari_items_carousel_brand.item_fee %></p>
+                </div>
+            </a>
+        </div>
+    <% end %>
+</div>
+<div class="more-button-recommenditem">
+    <% @brand.each do |brand| %>
+        <a href="http://localhost:3000/brands/<%= brand.id %>" class="more-button-recommenditem-text">もっと見る</a>
+    <% end %>
+</div>

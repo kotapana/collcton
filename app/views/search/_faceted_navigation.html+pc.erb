@@ -1,0 +1,107 @@
+<!-- 検索するコード -->
+<%= form_with model: @post, url: search_path ,method: :get, data: {remote: false} do |f| %>
+
+<div class="search-contents contents-pc contents mt-5">
+    <div class="row">
+        <div class="search-sticky col-3 pl-0">
+            <div class="search-box border shadow-sm">
+                <div class="serch-inner-box border-bottom">
+                    <p class="text-center h3 my-2">絞りこむ</p>
+                </div>
+                <div class="searchs mx-auto">
+                    <div class="serchs-inner">
+                        <div class="searchs-box">
+                            <div class="searchs-contents text-white mt-3 mb-2 p-1">キーワード検索</div>
+                            <div class="my-3">
+                                <!-- キーワード検索するコード -->
+                                <%= f.text_field :keyword , value: params[:keyword] , class: "form-control" , placeholder: "キーワードで絞る" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serchs-inner">
+                        <div class="searchs-box">
+                            <div class="searchs-contents text-white mt-3 mb-2 p-1">ブランド検索</div>
+                            <div class="my-3">
+                                <!-- ブランド検索するコード -->
+                                <%= f.text_field :brand , value: params[:brand] , class: "form-control" , placeholder: "ブランドで絞る" %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serchs-inner">
+                        <div class="searchs-box">
+                            <div class="searchs-contents text-white mt-3 mb-2 p-1">価格</div>
+                            <div class="row my-3">
+                                <!-- 価格検索するコード -->
+                                <%= f.text_field :price_min , value: params[:price_min] , class: "form-control col-5" , placeholder: "0"%>
+                                <span class="searchs-span col-2 text-center"> 〜 </span>
+                                <%= f.text_field :price_max , value: params[:price_max] , class: "form-control col-5" , placeholder: "10,000"%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serchs-inner">
+                        <div class="searchs-box">
+                            <div class="searchs-contents text-white mt-3 mb-2 p-1">商品の状態</div>
+                            <div class="form-check form-label p-0">
+                                <!-- 商品のステータスのチェックボックスを表示するコード -->
+                                <%= f.collection_check_boxes(:mercari_item_category_id,@mercari_item_categories,:item_status,:item_status) do |b| %>
+                                    <%= b.label { b.check_box(checked: @mercari_item_category_ids.include?(b.value),class: "form-check-label") + b.text } %>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serch-inner-box border-top">
+                    <div class="w-75 mx-auto text-center">
+                        <!-- 検索を実行するコード -->
+                        <%= f.submit "絞り込む" , class: "search-btn btn btn-lg form-control rounded-pill h3 text-white my-3" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-items col-9 p-0">
+            <nav class="search-nav navbar navbar-expand-sm navbar-dark bg-white m-0 py-0">
+                <div class="collapse navbar-collapse justify-content-start">
+                    <div class="navi-item">
+                        <p class="search-p m-0"><span class="font-weight-bold">全<%= @mercari_item_all_count %>件</span>のうち<span class="font-weight-bold">1-60件</span>を表示</p>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="search-navbar navbar-nav">
+                        <li class="nav-item">
+                            並び替え
+                        </li>
+                        <li class="nav-select nav-item ml-4">
+                            <!-- 並び替え検索するコード -->
+                            <%= f.select :sort, [['新着順', 'new'],['値段が安い順', 'reasonable'],['値段が高い順', 'luxury'],['いいねが多い順', 'likes']],:selected=>params[:sort] , class:"pl-4" %>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <% end %>
+            <div class="row">
+                <% @mercari_items.each do |m| %>
+                    <div class="search-card col-3">
+                        <div class="card rounded-0 shadow-sm">
+                            <div class="card-img">
+                                <img src="<%= m.item_image_url %>" class="card-img-top rounded-0" alt="">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text-box">
+                                    <h5 class="card-title"><%= m.item_brand %></h5>
+                                    <p class="card-text"><%= m.item_title %></p>
+                                </div>
+                                <a href="http://localhost:3000/items/<%= m.mercari_item_id %>" class="card-info stretched-link text-decoration-none text-reset font-weight-bold">¥ <%= m.item_fee %></a>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+            <div class="pagination-nav row my-4">
+                <div class="col-auto mx-auto">
+                    <%= paginate @mercari_items %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

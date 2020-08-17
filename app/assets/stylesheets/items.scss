@@ -1,0 +1,709 @@
+/* デフォルト設定を無くすため　のCSS */
+body{
+    padding: 0;
+    margin: 0;
+}
+input{
+    border:none;
+    background:none;
+    outline: 0;
+}
+button{
+    border:none;
+    background:none;
+    outline: 0;
+}
+h1{
+    color:rgb(63, 63, 63);
+}
+h2{
+    color:rgb(63, 63, 63);
+}
+h3{
+    color:rgb(63, 63, 63);
+}
+p{
+    color:rgb(63, 63, 63);
+}
+ul{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    list-style: none;
+    color:rgb(63, 63, 63);
+}
+li{
+    color:rgb(63, 63, 63);
+}
+
+
+/* 検索　のCSS */
+.wrapper-search{
+    position: relative;
+    height: 500px;
+    margin-bottom:100px;
+}
+.inner-search{
+    position:absolute;
+    top:60%;
+    left:50%;
+    text-align:center;
+    transform:translate(-50%, -50%);
+    line-height:1.6;
+}
+.logo{
+    font-size:4.2rem;
+    font-weight:bold;
+    text-align: center;
+    position: relative;
+    margin: 0px 0px -10px;
+}
+.sub-title{
+    margin: 0px 0px 50px;
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+}
+.surprised{
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 10px;
+}
+.search-adjustment{
+    display:flex
+}
+.search-box{
+    border-radius: 0px 5px 5px 0px /  0px 5px 5px 0px;
+    margin: 0px 0px 15px;
+    border: solid 2px rgb(214, 214, 214);
+    text-align: left;
+    border-left-style: hidden;
+}
+.search_big{
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 13px 200px 13px;
+    text-align: center;
+}
+.search-left{
+    border-radius: 5px 0px 0px 5px /  5px 0px 0px 5px;
+    width: 48px;
+    height: 48px;
+    background: rgb(98, 212, 207);
+}
+.search-icon{
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+}
+
+
+
+/* 新着のアイテム　のCSS */
+.heading{
+    font-size:32px;
+    color: rgb(63, 63, 63)
+}
+.wrapper-box{
+    height: auto;
+    width: auto;
+}
+.wrapper-newitem{
+    position: relative;
+    height: 2000px;
+    background-color:rgb(255, 253, 232);
+}
+.inner-contents{
+    position:absolute;
+    left:7%;
+    right:7%;
+} 
+.heading-item-text{
+    font-size:24px;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+.inner-item-box{
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.item-box{
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    margin: 0px 5px 25px;
+    position: relative;
+    background-color:rgb(255, 255, 255);
+}
+.item-img{
+    height:260px;
+    width:235px;
+}
+.item-sentence-box{
+    height:65px;
+    width:235px;
+    overflow-wrap: normal;
+    color: rgb(63, 63, 63);
+    font-size:14px;
+    text-overflow: ellipsis;   
+}
+.item-title{
+    margin-left:10px;
+    margin-top:0px;
+    margin-right:10px;
+}
+.item-description{
+    margin-top:-14px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.inner-inner-box{
+    display:flex;
+}
+.item-button{
+    border-radius: 4px;
+    height:38px;
+    width:120px;
+    margin:-2% 0px 2% 8%;
+    background-color:rgb(255, 172, 197);
+    color:rgb(255, 255, 255);
+    font-size:16px;
+    font-weight: bold;
+}
+.item-price{
+    margin:0px 0px 0px 8px;
+    font-size:20px;
+    font-weight: bold;
+}
+.more-button{
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    background-color:rgb(255, 255, 255);
+    display: table;
+    height:40px;
+    width:200px;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 16px auto 50px;
+    text-align:center;
+}
+.more-button-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ブランドで探す　のCSS */
+.wrapper-brand{
+    position: relative;
+    height: 2000px;
+}
+
+
+/* カテゴリーをみる　のCSS */
+.wrapper-category{
+    position: relative;
+    margin-top: 50px;
+    height: 2180px;
+    background-color:rgb(255, 253, 232);
+}
+.heading-category-text{
+    font-size:24px;
+    font-weight: bold;
+}
+.category-img{
+    border-radius: 100%;
+    height:200px;
+    width:200px;
+}
+.inner-category-box{
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.category-box{
+    margin: 0px 10px 25px;
+    text-align:center;
+    position: relative;
+}
+.category-text{
+    font-size:16px;
+}
+
+
+
+/* introduction　のCSS */
+.wrapper-introduction{
+    position: relative;
+    margin-top: 50px;
+    height: 600px;
+}
+.inner-introduction-box{
+    height: auto;
+    margin-top:50px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.introduction-box{
+    width:45%;
+    position: relative;
+}
+.introduction-icon-box{
+    border-radius: 100%;
+    height:40px;
+    width:40px;
+    background: rgb(98, 212, 207);
+    position: relative; /* 中央寄せ用 */
+}
+.introduction-icon-1{
+    top: 0; /* 中央寄せ用 */
+    bottom: 0; /* 中央寄せ用 */
+    left: 0; /* 中央寄せ用 */
+    right: 0; /* 中央寄せ用 */
+    margin: auto; /* 中央寄せ用 */
+    position: absolute; /* 中央寄せ用 */
+    background: rgb(98, 212, 207);
+    width: 25px;
+    height: 25px;
+    vertical-align:  middle;
+}
+.introduction-adjustment{
+    display:flex;
+}
+.introduction-title{
+    margin:0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:22px;
+}
+.introduction-text{
+    margin-bottom:49px;
+}
+.introduction-button{
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    background-color:rgb(255, 172, 197);
+    display: table;
+    height:40px;
+    width:200px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 16px auto 50px;
+    text-align:center;
+}
+.introduction-button-text{
+    color: rgb(255, 255, 255);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Searchページ */
+/* 上部固定のロゴのCSS */
+.wrapper-logo{
+    position: relative;
+    height: 80px;
+}
+.logo-center{
+    text-align: center;
+    font-size: 24px;
+}
+.logo-text{
+    margin:-20px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 検索条件のCSS */
+.wrapper-searchif{
+    position: relative;
+    height: 180px;
+}
+.searchif-keyword{
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 13px 0 13px;
+    text-align: center;
+}
+.searchif-adjustment{
+    display:flex;
+    justify-content:space-between;
+}
+.searchif-keyword-adjustment{
+    display:flex;
+    width:100%;
+}
+.searchif-category{
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 13px 0 13px;
+    text-align: center;
+}
+.searchif-box{
+    border-radius: 0px 5px 5px 0px /  0px 5px 5px 0px;
+    margin: 0px 0px 15px;
+    border: solid 2px rgb(214, 214, 214);
+    text-align: left;
+    border-left-style: hidden;
+    width:100%;
+}
+.searchif-box-small{
+    border-radius: 0px 5px 5px 0px /  0px 5px 5px 0px;
+    width:100%;
+    padding-left:10px;
+    margin-bottom:15px;
+    border: solid 2px rgb(214, 214, 214);
+    text-align: center;
+    border-left-style: hidden;
+}
+.seacrh-line{
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+}
+.fix{
+    position: fixed;
+}
+/* 検索結果のCSS */
+.wrapper-newitem-search{
+    position: relative;
+    height: 8000px;
+}
+.seacrhresult-number-of-items{
+    font-size: 24px;
+}
+.inner-item-box-bottom-number-adjustment{
+    padding:5% 34% 0 34%;
+}
+.item-box-bottom-number{
+    display: flex;
+    justify-content:space-between;
+}
+.item-box-bottom-number-1{
+    background: rgb(98, 212, 207);
+    height:45px;
+    width:45px;
+    display: flex;/* 下記の2つを発動させるために必要 */
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+.item-box-bottom-number-1-text{
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+}
+.item-box-bottom-number-2-5{
+    height:45px;
+    width:45px;
+    display: flex;/* 下記の2つを発動させるために必要 */
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+.item-box-bottom-number-2-5-text{
+    font-weight:bold;
+}
+.item-box-bottom-number-abbreviation{
+    height:45px;
+    width:45px;
+    display: flex;/* 下記の2つを発動させるために必要 */
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+.item-box-bottom-number-abbreviation-text{ 
+    font-weight:bold;
+}
+.item-box-bottom-number-next{
+    background: rgb(222, 255, 253);
+    height:45px;
+    width:45px;
+    display: flex;/* 下記の2つを発動させるために必要 */
+    align-items: center; /* 縦方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
+.item-box-bottom-number-next-text{
+    color:rgb(98, 212, 207);
+    font-weight:bold;
+}
+
+/* 商品詳細のCSS */
+.wrapper-breadclumb{
+    position: relative;
+    vertical-align:top;
+    height: 60px;
+}
+.inner-breadclumb{
+    position:absolute;
+    left:7%;
+    right:7%;
+}
+.wrapper-itemdetail{
+    position: relative;
+    height: 700px;
+}
+.itemdetail-img-adjustment{
+    display:flex;
+    position:absolute;
+    width:100%;
+}
+.itemdetail-img-adjustment-column{
+    display:flex;
+    flex-direction:column;
+}
+.itemdetail-img-side{
+    box-shadow: 0px 3px 10px rgb(226, 226, 226);
+    height:67.6px;
+    width:61.1px;
+    margin-bottom:23px;
+    border: solid 1px rgb(214, 214, 214);
+}
+.itemdetail-img{
+    box-shadow: 0px 2px 8px rgb(226, 226, 226);
+    width: 100%;
+    min-width: 52px;
+    min-height: 47px;
+    max-width: 564px;
+    max-height: 624px;
+    margin-left: 16px;
+}
+.itemdetail-introduction-box{
+    position: relative;
+    height:624px;
+    width:100%;
+    margin-left:16px;
+    background-color:rgb(255, 253, 232);
+}
+.itemdetail-introduction-inner{
+    position:absolute;
+    left:3%;
+    right:3%;
+}
+.itemdetail-introduction-box-line{
+    border-color:rgb(255, 217, 0);
+    border-width:0.5px;
+}
+.searchif-box-inner{
+    display:flex;
+    width:33%;
+}
+.itemdetail-introduction-box-shop{
+    margin-left:30px;
+    font-size:20px;
+}
+.itemdetail-introduction-box-title{
+    margin-left:30px;
+    font-size:28px;
+}
+.itemdetail-introduction-box-text-inner{
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-right:20px;
+    display:flex;
+    justify-content: space-around;
+}
+.itemdetail-introduction-box-text-column-left{
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+}
+.itemdetail-introduction-box-text-column-right{
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+}
+.itemdetail-introduction-box-logo{
+    height:70px;
+    width:140px;
+}
+.itemdetail-price-button-adjustment{
+    margin-top:24px;
+    margin-left:30px;
+    margin-right:20px;
+    display:flex;
+    justify-content:space-between;
+}
+.itemdetail-price-inner-left{
+    display:flex;
+    flex-direction:column;
+    float:left;
+}
+.itemdetail-carriage{
+    border-radius: 20px;
+    background-color:rgb(255, 217, 0);
+    display: table;
+    height:30px;
+    width:90px;
+    margin-bottom:20px;
+    font-weight: bold;
+    text-align:center;
+}
+.itemdetail-carriage-text{
+    display: table-cell;
+    vertical-align: middle;
+    color:rgb(255, 255, 255);
+    font-size:16px;
+}
+.itemdetail-price{
+    margin:0px 0px 0px 8px;
+    font-size:36px;
+    font-weight: bold;
+}
+.itemdetail-button-inner-right{
+    display:flex;
+    flex-direction:column;
+    float:right;
+}
+.itemdetail-button-good{
+    border-radius: 4px;
+    display:flex;
+    display: table;
+    text-align:right;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 7px 10px;
+    height:20px;
+    width: 80px;
+    background: rgb(255, 172, 197);
+}
+.itemdetail-button-good:before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid rgb(255, 172, 197);
+}
+.itemdetail-button-good-heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -50px;
+  }
+  .itemdetail-button-good-heart:before,
+  .itemdetail-button-good-heart:after {
+    position: absolute;
+    content: "";
+    margin-top:50px;
+    margin-left:8px;
+    left: 10px;
+    top: 0;
+    width: 10px;
+    height: 16px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .itemdetail-button-good-heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+  }
+.itemdetail-button-good-text{
+    display: table-cell;
+    vertical-align: middle;
+    color:rgb(255, 255, 255);
+    font-size:16px;
+}
+.itemdetail-button{
+    border-radius: 4px;
+    height:50px;
+    width:190px;
+    margin-right:12px;
+    background-color:rgb(255, 172, 197);
+    color:rgb(255, 255, 255);
+    font-size:26px;
+    font-weight: bold;
+}
+
+.wrapper-recommenditem{
+    position: relative;
+    height: 2150px;
+}
+.recommenditem-box-adsjustment{
+    display:flex;
+    justify-content:space-between;
+}
+.recommenditem-prevnext{
+    height:40px;
+    width:40px;
+    background-color:rgb(254, 255, 167);
+    display: table;
+}
+.recommenditem-prevnext-text{
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    color:rgb(255, 217, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+.recommenditem-box{
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    margin: 0px 0px 25px;
+    position: relative;
+    width:211.5px;
+    background-color:rgb(255, 255, 255);
+}
+.recommenditem-img{
+    height:234px;
+    width:211.5px;
+}
+.recommenditem-title{
+    margin-left:10px;
+    margin-top:0px;
+    margin-right:10px;
+    font-size:14px;
+}
+.recommenditem-description{
+    margin-top:-10px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:14px;
+}
+.recommenditem-price-button-adjustment{
+    display:flex;
+}
+.recommenditem-price{
+    margin:0px 0px 0px 10px;
+    font-size:18px;
+    font-weight: bold;
+}
+.recommenditem-button{
+    border-radius: 4px;
+    height:32px;
+    width:50%;
+    margin:-2% 0px 2% 8%;
+    background-color:rgb(255, 172, 197);
+    color:rgb(255, 255, 255);
+    font-size:16px;
+    font-weight: bold;
+}
+.more-button-recommenditem{
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgb(209, 209, 209);
+    background-color:rgb(255, 217, 0);
+    display: table;
+    height:40px;
+    width:200px;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    margin: 16px auto 50px;
+    text-align:center;
+}
+.more-button-recommenditem-text{
+    display: table-cell;
+    vertical-align: middle;
+    color:rgb(255, 255, 255);
+}
+
+/* 商品の画像サイズの比率は、52:47であるため、商品画像を表示する際はその比率に合わせて掛け算で算出する*/
+
+
+.main_menu .main_nav .mega_menu {
+    display: none;
+}
+
+
+

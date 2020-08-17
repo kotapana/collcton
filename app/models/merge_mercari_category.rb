@@ -1,0 +1,2 @@
+class MergeMercariCategory < ApplicationRecord
+end
